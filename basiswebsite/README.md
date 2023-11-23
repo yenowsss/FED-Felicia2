@@ -124,10 +124,10 @@ Felicia
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - maak gebruik later van intersect voor die pop up animatie ding
+  -je hoeft niet verplicht zelf nog code toe te voegen aan je pagina
+  - doe het stap voor stap begin met html
+  - die breakdownschets moet nog dynamische delen er in 
 
 </details>
 
