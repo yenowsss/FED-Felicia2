@@ -142,6 +142,8 @@ Felicia
 
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  ik ben niet heel veel verder gekomen deze week. Ik ben nu bezig met het maken van een image slider, maar dit is vrij lastig. Ook wil ik nog de videos in mijn website zetten want dit heb ik ook nog niet gedaan.
+
 
 
   ### Agenda voor meeting
@@ -152,6 +154,13 @@ Felicia
   | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
   | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
   | ...            | ...                | ...          | ...              |
+
+felicia:
+- Hoe maak ik een imageslider...
+- Hoe krijg ik de background image van de site ACNH met het bewegende beeld...
+- Hoe zorg ik dat mijn videos correct werken in html zonder dat het andere elemeten weghaalt
+- kan ik de sections wel gebruiken aangezien niet in alle sections een directe h2 is?
+
 
 
   ### Verslag van meeting
@@ -253,4 +262,23 @@ Felicia
   2. bron 2
   3. ...
 
+  Bron images:
+  https://animalcrossing.nintendo.com/new-horizons/explore/
+
+
+  bronnen code:
+
+  https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors
+
+  dropshadows
+  https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/drop-shadow
+
+
+  dit stukje code:    -webkit-font-smoothing: antialiased; 
+  = van https://animalcrossing.nintendo.com/new-horizons/explore/
+  hierbij worden de gekartelde randen van rondingen en diagonale lijnen verzacht zodat het er beter uit ziet.
+
+  bronnen fonts: 
+  https://fonts.google.com/specimen/Libre+Franklin?query=libre+franklin
+  https://fonts.google.com/specimen/Zilla+Slab
 </details>

@@ -2,144 +2,380 @@
 /* CSS REMEDY */
 /**************/
 *, *::after, *::before {
-  box-sizing:border-box;  
-}
-/*********************/
-/* CUSTOM PROPERTIES */
-/*********************/
-:root {
-	/* startje */
-	--color-text:rgb(107, 92, 67);
-	--Hoofdkopjes: rgb(2, 125, 117);
-	--main-background-color: rgb(137, 201, 161);
-	--sectioncolor-background: rgb(248, 248, 240);
-	--logocolor: rgb(230, 0, 18);
-    --menucolor:  rgb(241, 226, 111);
-
-	/* Font */
-	font-family: fot-rodin-pron, sans-serif;
-font-style: normal;
-font-weight: 600;
-background-color: var(--main-background-color);
-
-}
+	box-sizing:border-box;  
+  }
+  /*********************/
+  /* CUSTOM PROPERTIES */
+  /*********************/
+  :root {
+	  /* colors */
+	  --color-text:rgb(107, 92, 67);
+	  --Hoofdkopjes: rgb(2, 125, 117);
+	  --main-background-color: rgb(137, 201, 161);
+	  --sectioncolor-background: rgb(248, 248, 240);
+	  --logocolor: rgb(230, 0, 18);
+	  --menucolor:  rgb(241, 226, 111);
+	  --mainribboncolor: rgba(240,255,245,255);
+	  --secundairysectioncolor: rgba(229,255,230,255);
+  
+      -webkit-font-smoothing: antialiased;
+  
 
 
 
- /* ...................eerste deel = navigatie ...................... */
+	  /* Font */
+	  font-family: 'Libre Franklin', sans-serif;
+  background-color: var(--main-background-color);
+  
+  
+  
+  }
+  
+  
+  
+   /* ...................eerste deel = navigatie ...................... */
+  
+  body {
+	  margin: 0;
+  }
+  
+  header nav img {
+  max-width: 3em;
+  
+  }
+  
+  header nav:first-of-type ul {
+  /* hoe zet ik de background volledig op de achtergrond in de volledige breedte */
+	  list-style: none;
+	  display: flex;
+	  justify-content: space-between;
+	  align-items: center;
+	  background-color: var(--logocolor);
+	  flex-grow: 1;
+  
+  
+  }
+  
+  header nav:nth-child(1) ul+ul {
+  background-color: var(--menucolor);
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  padding-bottom: 0.9em;
+  
+  }
+  
+  
+  header nav li {
+	  /* border: 5px solid blueviolet; */
+  padding: 5px;
+  list-style: none;
+  
+  
+   }
+  
+  /* hamburger menu navigatie ..hidden.. */
+  header nav+nav {
+  
+  background-color: var(--menucolor);
+  position: fixed;
+  right: 0em;
+  left: 0em;
+  top: 0em;
+  bottom: 0em;
+  translate: 100% 0%; 
+  
+  
+  }
+  
+  
+  header nav+nav.toonMenu {
+	  translate: 0% 0%; 
+	  transition: 1s; 
+  }
+  
+  /* browser doet een automatische 
+  padding van 40px dus hier specificeren */
+  
+  ul{
+	  padding: 0px;
+	  margin: 0px;
+  }
+  
+  
+  button{
+	  border: none;
+	background-color: transparent;
+	padding: 0;
+  text-align: center;
+  
+  }
+  
+  
+  
+   /* ...................tweede deel = MAIN ...................... */
+   /* main {
+  margin: 1em;
+   } */
+   main img {
+		  margin: 1em;
+  width: 20em;
+  }
 
-body {
-	margin: 0;
-}
-
-header nav img {
-max-width: 3em;
-
-}
-
-header nav:first-of-type ul {
-/* hoe zet ik de background volledig op de achtergrond in de volledige breedte */
-	list-style: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--logocolor);
-	flex-grow: 1;
-
-
-}
-
-header nav:nth-child(1) ul+ul {
-background-color: var(--menucolor);
-justify-content: center;
-position: sticky;
-top: 0;
-
-}
-
-
-header nav li {
-	/* border: 5px solid blueviolet; */
-padding: 5px;
-list-style: none;
-
-
- }
-
-/* hamburger menu navigatie ..hidden.. */
-header nav+nav {
-
-background-color: var(--menucolor);
-position: fixed;
-right: 0em;
-left: 0em;
-top: 0em;
-bottom: 0em;
-translate: 100% 0%; 
-
-
-}
-
-
-header nav+nav.toonMenu {
-	translate: 0% 0%; 
-	transition: 1s;	
-}
-
-/* browser doet een automatische 
-padding van 40px dus hier specificeren */
-
-ul{
-	padding: 0px;
-	margin: 0px;
-}
-
-
-button{
-	border: none;
-  background-color: transparent;
-  padding: 0;
-text-align: center;
-
-}
-
-
-
- /* ...................tweede deel = MAIN ...................... */
- main {
+  main section{
 	margin: 1em;
- }
- main img{
-	width: 20em;
-	}
+  }
+  
+main section:nth-child(1){
+	background-color: var(--sectioncolor-background);
+	margin: 0;
+	margin-bottom: 4em;
+	padding: 2em;
 
 	
-h1, h2{
-color: var(--Hoofdkopjes);
-text-align: center;
+  }
+  
+	  
+  main section:nth-child(1) p, h2{
+font-size: 0.95em;
+	padding-top: 1em;
+
+  }
+  
+
+  section article:nth-of-type(1) {
+	  background-color: var(--sectioncolor-background);
+  padding: 1.7em;
+  border-radius: 1em;
+  border: solid 0.75em rgb(0, 129, 96, 0.65) ;
+  }
+  
+   article:nth-of-type(2) {
+  background-color: green;
+  padding: 1.7em;
+  border-radius: 1em;
+  
+  }
+  
+  section section {
+  display: grid;
+  grid-template-columns: 12em 1em;
+  margin: 1em;
+  margin-bottom: 2.5em;
+  }
+  
+  section section img {
+	  width:8em;
+	  position: absolute;
+	  left: 12em;
+  }
+  
+  section section p{
+  
+	  background-color: var(--sectioncolor-background);
+	  border-radius: 2em;
+	  height: 7em;
+  
+	  padding:1em ;
+	  margin: 1em;
+  
+	  font-family: 'Saira', sans-serif;
+  font-family: 'Zilla Slab', serif;
+  
+  }
+
+  section:nth-of-type(4) img {
+	  
+	  position: relative;
+  top: -2em;
+  width: 15.4em;
+  left: 3em;
+  
+  }
+  
+  section:nth-of-type(6) article, section:nth-of-type(3) article{
+	  background-color: var(--secundairysectioncolor);
+	  border: none;
+	  border-radius: 0.5em;
+  
+  }
+  
+  section:nth-of-type(6) article h2,  section:nth-of-type(3) article h2 {
+	  color: var(--color-text);
+	  font-size: 1em;
+	  margin-bottom: 1em ;
+	  
+  
+  }
+  
+  section:nth-of-type(6) article p{
+	  margin: 0.5em;
+  }
+  
+  section:nth-of-type(6) section {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row-reverse;
+position: relative;
+
 }
 
-p {
-	color: 	var(--color-text );
-	font-size: 0.9em;
-    text-align: center;
+section:nth-of-type(6) section p {
+background-color: var(--menucolor);
+
+}
+section:nth-of-type(6) section img {
+	width: 6em;
+	margin-top: 4em;
+left:5em;
+}
+
+section:nth-of-type(6) section img:nth-of-type(1) {
+	width: 6em;
+	margin-top: 6em;
+left:5em;
+}
+section:nth-of-type(6) section img:nth-of-type(2) {
+	width: 14em;
+left: 1.1em;
+top: 4em;
 
 }
 
+section:nth-of-type(7) {
+background-color: var(--sectioncolor-background);
+margin: 0em;
+display: flex;
+flex-wrap: wrap;
+flex-direction: column;
+}
+section:nth-of-type(7) h2 {
+	color: var(--color-text);
+	}
 
-/* footer */
+	section:nth-of-type(7) button {
+	background-color: var(--color-text);
+	width: 10em;
+	padding: 1em;
+	border-radius: 1.25em;
 
-footer {
-	margin: 1em;
- }
+		}
+
+		section:nth-of-type(7) button a {
+		color: var(--sectioncolor-background);
+		font-family: 'Saira', sans-serif;
+	font-family: 'Zilla Slab', serif;
+font-size: 1.1em;
+text-decoration: none;
+				}
+	
+  h1, h2{
+  color: var(--Hoofdkopjes);
+  text-align: center;
+  margin: 0em;
+  font-size: 1.4em;
+  line-height: 1.2em;
+  
+  /* header fonts */
+  font-family: 'Saira', sans-serif;
+  font-family: 'Zilla Slab', serif;
+  }
+  
+  h1 {
+	  background-color:  var(--mainribboncolor) ;
+	  font-size: 1.25em;
+	  padding: 1.25em;
+  border-radius: 0.3em;
+  margin: 1em;
+  filter: drop-shadow(0.2em 0.2em 0.2em rgba(0, 0, 0, 0.226));
+	  }
+  
+  p {
+		  color:  var(--color-text );
+		  font-size: 0.8em;
+		  text-align: center;
+		  line-height: 1.5em;
+		  margin: 0em;
+  }
+  
+    
+  img[src$=".jpg"], video, figure img {
+	border: 0.5em solid white;
+	box-shadow:0.2em 0.2em 0.2em rgba(7, 7, 7, 0.355)
+	
+}
+
+	  img[src="./images/Exploreimgs/logo-acnh-en-2x.png"] {
+  position: absolute;
+  top: 7em;
+  left: 9em;
+  width: 6em;
+   margin: 0em;
+   filter: drop-shadow(0.2em 0.2em 0.2em rgba(0, 0, 0, 0.518));
+  
+  }
+
+  img[src="./images/Exploreimgs/acnhfish.png"] {
+	width: 24.8em;
+position: relative;
+right: 3em;
+
+  }
+  
+  img[src="./images/Exploreimgs/playerwateringflowers.png"] {
+	  width: 10em;	  
+	  position: relative;
+	  left: 4em;
+	  top: 1em;
+	
+  }
+
+  /* img[src="./images/Exploreimgs/flowers-char-2x.png"] {
+	width: 6em;
+} */
+img[src="./images/Exploreimgs/flowers-char-2x.png"] p {
+background-color: aliceblue;
+}
 
 
 
+  figure {
+display: grid;
+justify-content: end;
+grid-template-columns: 10em 10em ;
+grid-template-rows: 10em 10em;
 
 
-/****************/
-/* JOUW STYLING */
-/****************/
-
-/* jouw code */
-
+  }
+  
+  figure img {
+	width: 10em;
+	
+  }
+  
+  
+  
+  video {
+	  margin: 1em;
+	  align-content: center;
+	  
+  
+  }
+  
+  video img {
+	  background-color: aqua;
+  }
+  
+  
+  /* footer */
+  
+  footer {
+	  margin: 1em;
+	  background-color: var(--sectioncolor-background);
+	  margin: 0;
+	  padding: 1.5em;
+   }
+  
+  
+  
+  
